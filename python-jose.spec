@@ -6,7 +6,7 @@ Summary:	An implementation of the JOSE draft
 Summary(pl.UTF-8):	Implementacja szkicu JOSE
 Name:		python-jose
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/jose/
