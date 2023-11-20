@@ -16,6 +16,7 @@ Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/python-jose/
 Source0:	https://files.pythonhosted.org/packages/source/p/python-jose/python-jose-%{version}.tar.gz
 # Source0-md5:	382a4da9ec39a3fb872fd1cf672b8a57
+Patch0:		%{name}-requirements.patch
 URL:		https://pypi.org/project/python-jose/
 %if %{with python2}
 BuildRequires:	python-modules >= 1:2.7
@@ -95,6 +96,7 @@ Dokumentacja API modułu Pythona jose.
 
 %prep
 %setup -q -n python-jose-%{version}
+%patch0 -p1
 
 # Sphinx 1.3+ ships napoleon extension in sphinx.ext namespace
 %{__sed} -i -e 's/sphinxcontrib\.napoleon/sphinx.ext.napoleon/' docs/conf.py
