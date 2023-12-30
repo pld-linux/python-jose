@@ -23,10 +23,12 @@ BuildRequires:	python-modules >= 1:2.7
 BuildRequires:	python-pytest-runner
 BuildRequires:	python-setuptools >= 1:39.2.0
 %if %{with tests}
+BuildRequires:	python-Crypto >= 2.6.1-17
 BuildRequires:	python-cryptography
 BuildRequires:	python-ecdsa
 BuildRequires:	python-pytest
 BuildRequires:	python-pytest-cov
+BuildRequires:	python-rsa
 BuildRequires:	python-six
 %endif
 %endif
@@ -35,10 +37,12 @@ BuildRequires:	python3-modules >= 1:3.5
 BuildRequires:	python3-pytest-runner
 BuildRequires:	python3-setuptools >= 1:39.2.0
 %if %{with tests}
+BuildRequires:	python3-Crypto >= 2.6.1-17
 BuildRequires:	python3-cryptography
 BuildRequires:	python3-ecdsa
 BuildRequires:	python3-pytest
 BuildRequires:	python3-pytest-cov
+BuildRequires:	python3-rsa
 BuildRequires:	python3-six
 %endif
 %endif
