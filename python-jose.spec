@@ -99,8 +99,8 @@ API documentation for Python jose module.
 Dokumentacja API modułu Pythona jose.
 
 %prep
-%setup -q -n python-jose-%{version}
-%patch0 -p1
+%setup -q
+%patch -P 0 -p1
 
 # Sphinx 1.3+ ships napoleon extension in sphinx.ext namespace
 %{__sed} -i -e 's/sphinxcontrib\.napoleon/sphinx.ext.napoleon/' docs/conf.py
