@@ -10,7 +10,7 @@ Summary(pl.UTF-8):	Implementacja JOSE w Pythonie
 Name:		python-jose
 # keep 3.2.x here for python2 support
 Version:	3.2.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/python-jose/
